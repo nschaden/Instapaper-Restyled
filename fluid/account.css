@@ -1,0 +1,26 @@
+/* Instapaper Restyled - account
+ *
+ * Styling for the account pages.
+ * In Fluid, attach this stylesheet in Fluid under Window > Userstyles.
+ * 
+ * Applicable patterns:
+ * *instapaper.com/user*
+ */
+
+body {
+	background: #f8f8f8 !important;
+	color: #232323;
+}
+
+a { 
+	color: #4183c4 !important;
+}
+
+#logo a {
+	color: #232323 !important;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;	
+}
+
+#logo a:hover {
+	color: #4183c4 !important;
+}

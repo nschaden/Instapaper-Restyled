@@ -1,0 +1,63 @@
+/* Instapaper Restyled - main
+ *
+ * Default styling for most pages on Instapaper. 
+ * In Fluid, attach this stylesheet in Fluid under Window > Userstyles.
+ * 
+ * Applicable patterns:
+ * *instapaper.com/extras*
+ * *instapaper.com/liked*
+ * *instapaper.com/u
+ * *instapaper.com/archive*
+ */
+body {
+	background: #f8f8f8 !important;
+	color: #232323;
+}
+
+#header a, #categoryHeader a, .pagination a, #deckad a, #right_column a, #footer a, .extras_section a, .app_list a {
+	color: #4183c4 !important;
+}
+
+#right_column a.bookmarklet, .extras_section a.bookmarklet {
+	color: white !important;
+}
+
+#logo a {
+	color: #232323 !important;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+#logo a:hover {
+	color: #4183c4 !important;
+}
+
+.extras_section a.reveal {
+	color: #eee !important;
+}
+
+.tableViewCell {
+	background: #fff !important;
+	color: #232323 !important;
+}
+
+.tableViewCell.active {
+	background: #eee !important;
+}
+
+.tableViewCell .actionLink {
+	color: #4183c4 !important;
+}
+
+.tableViewCell .deleteLink {
+	color: #700 !important;
+}
+
+.tableViewCell a.tableViewCellTitleLink:hover {
+	color: #4183c4 !important;
+}
+
+.tableViewCell a.tableViewCellTitleLink, .tableViewCell a.tableViewCellTitleLink:visited {
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
+}
+
+

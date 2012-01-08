@@ -40,7 +40,7 @@ body {
 }
 
 .tableViewCell.active {
-	background: #eee !important;
+	background: #f4f4f4 !important;
 }
 
 .tableViewCell .actionLink {
@@ -56,7 +56,7 @@ body {
 }
 
 .tableViewCell a.tableViewCellTitleLink, .tableViewCell a.tableViewCellTitleLink:visited {
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
 }
 
 
