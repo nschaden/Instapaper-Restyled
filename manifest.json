@@ -1,0 +1,34 @@
+{
+	// Instapaper Restyled
+	"name": "Instapaper Restyled",
+	"version": "0.3",
+
+	"description": "Palantino, softer colors, and more white space for a more relaxed Instapaper experience.",
+
+	"content_scripts": [ 
+	{
+		"all_frames": true,
+		"css": [ "css/main.css" ],
+		"js": [ "js/jquery.min.js","js/main.js" ],
+		"matches": [ "http://*.instapaper.com/extras*", "http://*.instapaper.com/liked*", "http://*.instapaper.com/u", "http://*.instapaper.com/archive*" ]
+	},
+	{
+		"all_frames": true,
+		"css": [ "css/reading.css" ],
+		"js": [ "js/jquery.min.js","js/main.js" ],
+		"matches": [ "http://*.instapaper.com/go*","http://*.instapaper.com/text*" ]
+	},
+	{
+		"all_frames": true,
+		"css": [ "css/browse.css" ],
+		"js": [ "js/jquery.min.js","js/main.js" ],
+		"matches": [ "http://*.instapaper.com/browse*" ]
+	},
+	{
+		"all_frames": true,
+		"css": [ "css/account.css" ],
+		"js": [ "js/jquery.min.js","js/main.js" ],
+		"matches": [ "http://*.instapaper.com/user*" ]
+	} ]
+}
+

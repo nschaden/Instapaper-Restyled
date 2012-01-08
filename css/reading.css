@@ -1,0 +1,28 @@
+/* Instapaper Restyled - reading
+ *
+ * Default styling for article text pages.
+ *
+ * Applicable patterns:
+ * *instapaper.com/go*
+ * *instapaper.com/text*
+ */
+
+body { 
+	background: #fff;
+	color: #232323;
+}
+
+div#story {
+	font-size: 18px !important;
+	line-height: 1.5 !important;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
+}
+
+div#story p {
+	margin-top: 0;
+	margin-bottom: 1.25em;
+}
+
+div#story a {
+	color: #4183c4;
+}
