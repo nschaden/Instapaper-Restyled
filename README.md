@@ -58,6 +58,8 @@ You're now finished. Close any open dialogs and restart the Fluid Instapaper app
 
 While the code base is my own, clearly a lot of inspiration for the keyboard functionality is heavily based on Brett Terpstra's work at [Instapaper Beyond](http://brettterpstra.com/instapaperbeyond/). 
 
+The icon used is a slightly altered, colorized version of the Instapaper icon created over at [Your Internet Business](http://yourinternetbusinesslink.com/best-iphone-apps/).
+
 Obviously none of this would be possible without [Marco Arment's](http://www.marco.org/) amazing work on [Instapaper](http://www.instapaper.com) itself.
 
 &copy; 2011 Nick Schaden 
