@@ -18,7 +18,7 @@
 		"all_frames": true,
 		"css": [ "css/reading.css" ],
 		"js": [ "js/jquery.min.js","js/main.js" ],
-		"matches": [ "http://*.instapaper.com/go*","http://*.instapaper.com/text*" ]
+		"matches": [ "http://*.instapaper.com/go*","http://*.instapaper.com/text*","http://*.instapaper.com/read*" ]
 	},
 	{
 		"all_frames": true,

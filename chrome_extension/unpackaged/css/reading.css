@@ -5,17 +5,30 @@
  * Applicable patterns:
  * *instapaper.com/go*
  * *instapaper.com/text*
+ * *instapaper.com/read*
  */
 
-body { 
-	background: #fff;
-	color: #232323;
+body.lightmode { 
+	background: #f8f8f8 !important;
+	color: #232323 !important;
+}
+
+body.georgiamode #titlebar h1, body.georgiamode #story, body.georgiamode .popover {
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
+}
+
+body.lightmode #controlbar_container {
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #f8f8f8), to( #f1f1f1)) !important;
+	background-image: -webkit-linear-gradient(#f8f8f8 , #f1f1f1) !important; 
+	background-image:    -moz-linear-gradient(#f8f8f8 , #f1f1f1) !important; 
+	background-image:     -ms-linear-gradient(#f8f8f8 , #f1f1f1) !important; 
+	background-image:      -o-linear-gradient(#f8f8f8 , #f1f1f1) !important; 
+	background-image:         linear-gradient(#f8f8f8 , #f1f1f1) !important;
 }
 
 div#story {
 	font-size: 18px !important;
 	line-height: 1.5 !important;
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
 }
 
 div#story p {
@@ -23,6 +36,6 @@ div#story p {
 	margin-bottom: 1.25em;
 }
 
-div#story a {
-	color: #4183c4;
+body.lightmode div#story a, body.lightmode div#story a:visited, body.lightmode div#story a:active {
+	color: #4183c4 !important;
 }
