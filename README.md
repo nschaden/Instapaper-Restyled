@@ -10,18 +10,18 @@ http://nickschaden.com
 <pre>
 		a: Jump to archive section
 shift + a: Archive selected item
-    b: Jump to browse section
+		b: Jump to browse section
 shift + d: Delete selected item
 		e: Edit selected item
 		j: Move list selection one item forward 
 		k: Move list selection one item back
  o/return: Open text version of selected item
- 		s: Jump to starred/liked section
+		s: Jump to starred/liked section
 shift + s: Star (like)/unstar selected item
 		t: Share selected item
 		u: Jump to unread section
 		v: Open selected item in new window/tab
-    ?: Open/close keyboard shortcuts overlay
+		?: Open/close keyboard shortcuts overlay
 </pre>
 
 ## Installation
