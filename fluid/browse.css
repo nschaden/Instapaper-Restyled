@@ -58,3 +58,51 @@ a.inactive_bookmarklet {
 	margin-top: 0 !important;
 	margin-bottom: 1.25em;
 }
+
+#help_screen {
+	-moz-opacity: 0.20;
+	background: #000;
+	display: none;
+	filter:alpha(opacity=20);
+	height: 100%;
+	left: -1000px;
+	opacity: 0.2;
+	position: absolute;
+	top: 0;
+	width: 10000px;
+	z-index: 1000;
+}
+
+#help_overlay {
+	background: #f8f8f8;
+	display: none;
+	font-family: 'helvetica neue',helvetica,arial,sans-serif;	
+	height: 440px;
+	left: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 20px 50px;
+	position: absolute;
+	width: 650px;
+	top: 70px;
+	z-index: 2000;
+}
+
+#help_overlay h2 {
+	font-size: 24px;
+	text-align: center;
+}
+
+#help_overlay ul {
+	list-style-type: none;
+}
+
+#help_overlay li {
+	font-size: 14px;
+	margin: 1em 0;
+}
+
+#help_overlay li > span {
+	display: inline-block;
+	width: 70px;
+}
