@@ -6,6 +6,7 @@
  * Applicable patterns:
  * *instapaper.com/extras*
  * *instapaper.com/liked*
+ * *instapaper.com/starred*
  * *instapaper.com/u
  * *instapaper.com/archive*
  */
@@ -28,6 +29,10 @@ body {
 }
 
 #logo a:hover {
+	color: #4183c4 !important;
+}
+
+#sharemenu > div > a {
 	color: #4183c4 !important;
 }
 
