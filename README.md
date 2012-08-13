@@ -2,7 +2,7 @@
 
 A revised, prettified version of Instapaper. Palatino, softer colors, more white space and keyboard shortcuts.
 
-Version: 0.8 (beta)
+Version: 0.65 (beta)
 Original Author: Nick Schaden
 http://nickschaden.com
 
@@ -28,8 +28,7 @@ shift + s: Star (like)/unstar selected item
 
 ### Google Chrome
 
-Because this is currently in beta form, there is no extension on the Google Web Store, the usual installation method.
-Instead:
+Install the more traditional way over at the [Chrome Web Store](https://chrome.google.com/webstore/detail/ocelloogpfbcigahgonmlhbmlohblijd). Alternatively you can install direct from this GitHub:
 
 1. [Download](https://github.com/nschaden/Instapaper-Restyled/zipball/master) this package's contents.
 2. Drag the chrome_extension/packaged/instapaper-restyled.crx file onto any open tab in Google Chrome.
@@ -39,9 +38,17 @@ The installation is then completed. Once you jump to any page in instapaper.com,
 
 Uninstall like any other extension: Under Chrome go to Window > Extensions and click on the 'Remove' button by Instapaper Restyled.
 
+### Safari
+
+For now this Safari Extension is a distributed only via direct download here on Github:
+
+1. [Download](https://github.com/nschaden/Instapaper-Restyled/zipball/master) this package's contents.
+2. Drag the safari_extension/packaged/instapaperrestyled.safariextz file into any open tab in Safari.
+3. Safari will prompt and ask if you want to install the Instapaper Restyled extension. Say yes.
+
 ### Fluid
 
-Note Instapaper Restyled requires a registred version of Fluid. Assuming that:
+Note Instapaper Restyled requires a registered version of Fluid. Assuming that:
 
 1. Via the fluid.app, generate a valid app for Instapaper. Open the app up. Log in.
 2. Go to Window > Userscripts.
