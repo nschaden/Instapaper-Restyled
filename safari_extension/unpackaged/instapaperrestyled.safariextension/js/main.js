@@ -198,16 +198,19 @@ Instapaper =
     // for a, jump to archive section
     if (!e.shiftKey && e.keyCode == 97)
     {
+      e.preventDefault();
       document.location.href = 'http://www.instapaper.com/archive';
     }
     // for b, jump to browse section
     if (!e.shiftKey && e.keyCode == 98)
     {
+      e.preventDefault();
       document.location.href = 'http://www.instapaper.com/browse';
     }
     // for shift + a, archive item in the list
     if (e.shiftKey && e.keyCode == 65)
     {
+      e.preventDefault();
       var leftbuttons = jQuery('#left_buttons');
       if (leftbuttons.length)
         leftbuttons.find('.button').first().trigger('click');
@@ -217,6 +220,7 @@ Instapaper =
     // for shift + d, delete item from list
     if (e.shiftKey && e.keyCode == 68)
     {
+      e.preventDefault();
       var leftbuttonsalt = jQuery('#left_buttons');
       if (leftbuttonsalt.length)
         leftbuttonsalt.find('.button').last().trigger('click');
@@ -226,31 +230,37 @@ Instapaper =
     // for e, edit item in the list
     if (e.keyCode == 101)
     {
+      e.preventDefault();
       Instapaper.editItem(Instapaper.active);
     }
     // for j, jump forward one selected item in the list
     if (e.keyCode == 106)
     {
+      e.preventDefault();
       Instapaper.moveActiveItem(true);
     }
     // for k, jump back one selected item in the list
     if (e.keyCode == 107)
     {
+      e.preventDefault();
       Instapaper.moveActiveItem(false);
     }
     // for o or return/enter, jump to read version of the selected item
     if (e.keyCode == 111 || e.keyCode == 13)
     {
+      e.preventDefault();
       Instapaper.readItem(Instapaper.active);
     }
     // for s, jump to liked section
     if (!e.shiftKey && e.keyCode == 115)
     {
+      e.preventDefault();
       document.location.href = 'http://www.instapaper.com/liked';
     }
     // for shift + s, star/unstar selected item
     if (e.shiftKey && e.keyCode == 83)
     {
+      e.preventDefault();
       var rightbuttons = jQuery('#right_buttons');
       if (rightbuttons.length)
         rightbuttons.find('.unlikebutton,.likebutton').trigger('click');
@@ -260,11 +270,13 @@ Instapaper =
     // for t, share item 
     if (e.keyCode == 116)
     {
+      e.preventDefault();
       Instapaper.shareItem(Instapaper.active);
     }
     // for u, jump to unread section
     if (e.keyCode == 117)
     {
+      e.preventDefault();
       if (typeof localStorage == 'object' && document.location.href.indexOf('/go') > -1 || document.location.href.indexOf('/text') > -1 || document.location.href.indexOf('/read') > -1)
         localStorage.setItem('instapaper_fromreadarticle','1');
         
@@ -273,6 +285,7 @@ Instapaper =
     // for v, open original item in new window
     if (e.keyCode == 118)
     {
+      e.preventDefault();
       // check if we're on the actual article, if so just open directly, otherwise check active cell
       var articleoriginaltitle = jQuery('#title_label');
       if (articleoriginaltitle.length && articleoriginaltitle.children('a').length)
@@ -283,6 +296,7 @@ Instapaper =
     // for shift + / (?), open/close help overlay
     if (e.shiftKey && e.keyCode == 63)
     {
+      e.preventDefault();
       var overlay = jQuery('#help_overlay');
       if (!overlay.length || !overlay.filter(':visible').length)
         Instapaper.showHelpOverlay();
