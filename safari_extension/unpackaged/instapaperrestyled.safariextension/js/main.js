@@ -196,7 +196,7 @@ Instapaper =
   {
     var nextactive;
     // for a, jump to archive section
-    if (!e.shiftKey && e.keyCode == 97)
+    if (!e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 97)
     {
       e.preventDefault();
       document.location.href = 'http://www.instapaper.com/archive';
@@ -208,7 +208,7 @@ Instapaper =
       document.location.href = 'http://www.instapaper.com/browse';
     }
     // for shift + a, archive item in the list
-    if (e.shiftKey && e.keyCode == 65)
+    if (e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 65)
     {
       e.preventDefault();
       var leftbuttons = jQuery('#left_buttons');
@@ -218,7 +218,7 @@ Instapaper =
         Instapaper.archiveItem(Instapaper.active);
     }
     // for shift + d, delete item from list
-    if (e.shiftKey && e.keyCode == 68)
+    if (e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 68)
     {
       e.preventDefault();
       var leftbuttonsalt = jQuery('#left_buttons');
@@ -228,37 +228,37 @@ Instapaper =
         Instapaper.deleteItem(Instapaper.active);
     }
     // for e, edit item in the list
-    if (e.keyCode == 101)
+    if (!e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 101)
     {
       e.preventDefault();
       Instapaper.editItem(Instapaper.active);
     }
     // for j, jump forward one selected item in the list
-    if (e.keyCode == 106)
+    if (!e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 106)
     {
       e.preventDefault();
       Instapaper.moveActiveItem(true);
     }
     // for k, jump back one selected item in the list
-    if (e.keyCode == 107)
+    if (!e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 107)
     {
       e.preventDefault();
       Instapaper.moveActiveItem(false);
     }
     // for o or return/enter, jump to read version of the selected item
-    if (e.keyCode == 111 || e.keyCode == 13)
+    if (!e.altKey && !e.ctrlKey && !e.metaKey && (e.keyCode == 111 || e.keyCode == 13))
     {
       e.preventDefault();
       Instapaper.readItem(Instapaper.active);
     }
     // for s, jump to liked section
-    if (!e.shiftKey && e.keyCode == 115)
+    if (!e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 115)
     {
       e.preventDefault();
       document.location.href = 'http://www.instapaper.com/liked';
     }
     // for shift + s, star/unstar selected item
-    if (e.shiftKey && e.keyCode == 83)
+    if (e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 83)
     {
       e.preventDefault();
       var rightbuttons = jQuery('#right_buttons');
@@ -268,13 +268,13 @@ Instapaper =
         Instapaper.starItem(Instapaper.active);
     }
     // for t, share item 
-    if (e.keyCode == 116)
+    if (!e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 116)
     {
       e.preventDefault();
       Instapaper.shareItem(Instapaper.active);
     }
     // for u, jump to unread section
-    if (e.keyCode == 117)
+    if (!e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 117)
     {
       e.preventDefault();
       if (typeof localStorage == 'object' && document.location.href.indexOf('/go') > -1 || document.location.href.indexOf('/text') > -1 || document.location.href.indexOf('/read') > -1)
@@ -283,7 +283,7 @@ Instapaper =
       document.location.href = 'http://www.instapaper.com/u';
     }
     // for v, open original item in new window
-    if (e.keyCode == 118)
+    if (!e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 118)
     {
       e.preventDefault();
       // check if we're on the actual article, if so just open directly, otherwise check active cell
@@ -294,7 +294,7 @@ Instapaper =
         Instapaper.openOriginalItem(Instapaper.active);
     }
     // for shift + / (?), open/close help overlay
-    if (e.shiftKey && e.keyCode == 63)
+    if (e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && e.keyCode == 63)
     {
       e.preventDefault();
       var overlay = jQuery('#help_overlay');
